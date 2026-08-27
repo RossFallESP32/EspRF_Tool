@@ -1,0 +1,79 @@
+ESP32C3_DTM_HCI_01f2a49_20250319.bin， 用于 DTM/BLE信令测试，统一测试接口
+======================================================
+
+Download Bin and Address（烧录固件地址）
+ESP32C3_DTM_HCI_01f2a49_20250319.bin	0x0
+-------------------------------------------------------------------------------
+
+
+按照下面 UART1 接线后上电即可测试，无需额外输入指令。
+-------------------------------------------
+ESP Launcher UART1 Connections （如果使用 ESP 串口板）:
+UART1 RX - GPIO5
+UART1 TX - GPIO4
+GND - GND
+------------------------------------------
+
+RS232 UART1 Connections （如果使用通用 RS232/TTL 串口板）:
+UART1 RX - GPIO4
+UART1 TX - GPIO5
+GND - GND
+-----------------------------------------
+上电以上述 GPIO 作为 UART1 测试管脚自动初始化完成，默认 BLE 功率 12dBm， CMW500 测试需要调整 auto 参考电平(仪器默认为10dBm)
+
+CMW500 等仪器设置如下： 
+RF Test -- EUT Control
+HW Interface: USB to RS232 adapter
+EUT Comm Protocol: HCI
+Virtual COM Port: The comport of UART1(USB Cable Connect to CMW500)
+Baud Rate: 115200
+Protocol:	None
+Auto Ranging: Selected
+
+
+
+-------------------------------------------------------------------------------
+UART1 接 CMW500
+UART0 接 PC，上电查看打印log，输入 help 可查看当前可用测试指令：
+
+Power On Log（上电打印log）:
+..............................
+I (287) sleep_gpio: Configure to isolate all GPIO pins in sleep state
+I (293) sleep_gpio: Enable automatic switching of GPIO sleep configuration
+I (299) coexist: coex firmware version: 49a8cdc
+I (318) coexist: coexist rom version 9387209
+I (318) main_task: Started on CPU0
+I (318) main_task: Calling app_main()
+I (318) gpio: GPIO[4]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (318) gpio: GPIO[5]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (328) BLE_INIT: BT controller compile version [6bca137]
+I (338) BLE_INIT: Bluetooth MAC: c0:4e:30:ee:7a:0e
+I (338) phy_init: phy_version 1180,01f2a49,Jun  4 2024,16:34:25
+I (388) UHCI: HCI messages can be communicated over UART1:
+--PINs: TxD 4, RxD 5, RTS -1, CTS -1
+--Baudrate: 115200
+[5n
+
+Type 'help' to get the list of commands.
+
+
+esp32c3> help
+
+set_ble_tx_power  -i <index>
+  Set ble tx power during DTM
+  -i, --index=<index>  tx power level index
+
+get_ble_tx_power 
+  Get ble tx power during DTM
+
+reconfig_dtm_uart_pin  -t <tx_pin> -r <rx_pin>
+  Reconfig dtm uart pins during DTM
+  -t, --tx=<tx_pin>  tx pin index
+  -r, --rx=<rx_pin>  rx pin index
+
+help  [<string>] [-v <0|1>]
+  Print the summary of all registered commands if no arguments are given,
+  otherwise print summary of given command.
+      <string>  Name of command
+  -v, --verbose=<0|1>  If specified, list console commands with given verbose level
+

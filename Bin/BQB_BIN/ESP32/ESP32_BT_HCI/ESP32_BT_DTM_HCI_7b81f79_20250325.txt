@@ -1,0 +1,47 @@
+ESP32_BT_DTM_HCI_7b81f79_20250325.bin， For DTM/BLE Signaling Test
+======================================================
+
+Download Bin and Address（烧录固件地址）
+ESP32_BT_DTM_HCI_7b81f79_20250325.bin	0x1000
+-------------------------------------------------------------------------------
+
+BT 测试仅需通过 UART0 查看上电打印信息成功即可，无需 UART1，接好射频连接线，HCI 命令通过 RF Cable 完成交互。
+
+CMW500 等仪器设置如下： 
+RF Test -- EUT Control
+HW Interface: None(EUT Control off)
+
+-------------------------------------------------------------------------------
+
+Power On Log（上电打印log）:
+..............................
+...
+BTDM CONTROLLER VERSION: 010200
+BTDM CONTROLLER DATE: Sep 13 2021 17:11:58
+BTDM ROM VERSION 0101
+[0;32mI (448) system_api: Base MAC address is not set[0m
+[0;32mI (458) system_api: read default base MAC address from EFUSE[0m
+BD_ADDR: 54:43:B2:DC:8C:66
+NVDS MAGIC FAILED
+RF Init OK with coex
+ACL Link Number[7], Mask other ACL Links
+[0;32mI (968) phy_init: phy_version 4760,7b81f79,Jul 18 2023,14:13:11[0m
+PLL track disable
+ACL Link Number[7], Mask other ACL Links
+Enable Classic BT
+Enable Low Energy
+ACL Link Number[7], Mask other ACL Links
+
+SSC version : cert/bqb_rf_mas_20220706_bt_init(6127e6b7)
+
+IDF version : cert/bqb_rf_mas_20230718(7e632188)
+
+WIFI LIB version : cert/bqb_rf_mas_20230718(7e632188)
+
+BT LIB version : cert/bqb_rf_mas_20230718(7e632188)
+
+phy version : 4760,7b81f79,Jul 18 2023,14:13:11
+
+!!!ready!!!
+
+BT 上电需要多等待几秒直到 ready 出现，此时可通过 CMW500 开始测试。
