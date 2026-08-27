@@ -1,0 +1,157 @@
+;; Support Data Rate
+;; ESP32-C5: support_tx_rate_5g_wifi6
+;;           support_rx_rate_5g_wifi6
+;; ESP32-Jupiter: 
+;;           support_tx_rate_5g_wifi6_jupiter
+;;           support_rx_rate_5g_wifi6_jupiter
+;;           support_tx_rate_6g_wifi6_jupiter
+;;           support_rx_rate_6g_wifi6_jupiter
+;;           support_tx_rate_5g_wifi6_m2_jupiter
+;;           support_rx_rate_5g_wifi6_m2_jupiter
+;;           support_tx_rate_6g_wifi6_m2_jupiter
+;;           support_rx_rate_6g_wifi6_m2_jupiter
+
+[support_tx_rate_5g_wifi6]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu
+;;              ,11ax Mcs8_Hesu, 11ax Mcs9_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb,11ax Mcs5_Hetb,11ax Mcs6_Hetb,11ax Mcs7_Hetb
+;;               11ax Mcs8_Hetb, 11ax Mcs9_Hetb,
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht
+;;          11ac Mcs8_vht
+
+
+
+[support_rx_rate_5g_wifi6]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu
+;;               11ax Mcs8_Hesu, 11ax Mcs9_Hesu,
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu,11ax Mcs3_Hemu,11ax Mcs4_Hemu,11ax Mcs5_Hemu,11ax Mcs6_Hemu,11ax Mcs7_Hemu
+;;               11ax Mcs8_Hemu, 11ax Mcs9_Hemu,
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht
+;;          11ac Mcs8_vht
+
+
+[support_tx_rate_2g_wifi6_jupiter]
+
+rate_11b = 11b 1M, 11b 2M, 11b 5.5M, 11b 11M
+rate_11g = 11g 6M, 11g 9M, 11g 12M, 11g 18M,11g 24M, 11g 36M, 11g 48M, 11g 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3, 11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu, 11ax Mcs1_Hesu, 11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu, 11ax Mcs5_Hesu, 11ax Mcs6_Hesu, 11ax Mcs7_Hesu, 11ax Mcs8_Hesu, 11ax Mcs9_Hesu, 11ax Mcs10_Hesu, 11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb, 11ax Mcs5_Hetb, 11ax Mcs6_Hetb, 11ax Mcs7_Hetb, 11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+
+
+[support_rx_rate_2g_wifi6_jupiter]
+
+rate_11b = 11b 1M, 11b 2M, 11b 5.5M, 11b 11M
+rate_11g = 11g 6M, 11g 9M, 11g 12M, 11g 18M,11g 24M, 11g 36M, 11g 48M, 11g 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3, 11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu, 11ax Mcs1_Hesu, 11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu, 11ax Mcs5_Hesu, 11ax Mcs6_Hesu, 11ax Mcs7_Hesu, 11ax Mcs8_Hesu, 11ax Mcs9_Hesu, 11ax Mcs10_Hesu, 11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu, 11ax Mcs3_Hemu, 11ax Mcs4_Hemu, 11ax Mcs5_Hemu, 11ax Mcs6_Hemu, 11ax Mcs7_Hemu, 11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+
+
+[support_tx_rate_5g_wifi6_jupiter]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu,11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb,11ax Mcs5_Hetb,11ax Mcs6_Hetb,11ax Mcs7_Hetb,11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_rx_rate_5g_wifi6_jupiter]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu, 11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu,11ax Mcs3_Hemu,11ax Mcs4_Hemu,11ax Mcs5_Hemu,11ax Mcs6_Hemu,11ax Mcs7_Hemu,11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_tx_rate_6g_wifi6_jupiter]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu,11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb,11ax Mcs5_Hetb,11ax Mcs6_Hetb,11ax Mcs7_Hetb,11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_rx_rate_6g_wifi6_jupiter]
+
+rate_11a = 11a 6M, 11a 9M, 11a 12M, 11a 18M,11a 24M, 11a 36M, 11a 48M, 11a 54M
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu, 11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu,11ax Mcs3_Hemu,11ax Mcs4_Hemu,11ax Mcs5_Hemu,11ax Mcs6_Hemu,11ax Mcs7_Hemu,11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+[support_tx_rate_2g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3, 11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu, 11ax Mcs1_Hesu, 11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu, 11ax Mcs5_Hesu, 11ax Mcs6_Hesu, 11ax Mcs7_Hesu, 11ax Mcs8_Hesu, 11ax Mcs9_Hesu, 11ax Mcs10_Hesu, 11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb, 11ax Mcs5_Hetb, 11ax Mcs6_Hetb, 11ax Mcs7_Hetb, 11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+
+
+[support_rx_rate_2g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs8, 11n Mcs9, 11n Mcs10, 11n Mcs11, 11n Mcs12, 11n Mcs13, 11n Mcs14, 11n Mcs15
+rate_11ax_hesu = 11ax Mcs0_Hesu, 11ax Mcs1_Hesu, 11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu, 11ax Mcs5_Hesu, 11ax Mcs6_Hesu, 11ax Mcs7_Hesu, 11ax Mcs8_Hesu, 11ax Mcs9_Hesu, 11ax Mcs10_Hesu, 11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu, 11ax Mcs3_Hemu, 11ax Mcs4_Hemu, 11ax Mcs5_Hemu, 11ax Mcs6_Hemu, 11ax Mcs7_Hemu, 11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+
+
+[support_tx_rate_5g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3,11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu,11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb,11ax Mcs5_Hetb,11ax Mcs6_Hetb,11ax Mcs7_Hetb,11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_rx_rate_5g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs8, 11n Mcs9, 11n Mcs10, 11n Mcs11, 11n Mcs12, 11n Mcs13, 11n Mcs14, 11n Mcs15
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu, 11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu,11ax Mcs3_Hemu,11ax Mcs4_Hemu,11ax Mcs5_Hemu,11ax Mcs6_Hemu,11ax Mcs7_Hemu,11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_tx_rate_6g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs0, 11n Mcs1, 11n Mcs2, 11n Mcs3, 11n Mcs4, 11n Mcs5, 11n Mcs6, 11n Mcs7
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu,11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+;;rate_11ax_hetb = 11ax Mcs0_Hetb, 11ax Mcs1_Hetb, 11ax Mcs2_Hetb, 11ax Mcs3_Hetb, 11ax Mcs4_Hetb,11ax Mcs5_Hetb,11ax Mcs6_Hetb,11ax Mcs7_Hetb,11ax Mcs8_Hetb, 11ax Mcs9_Hetb
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+
+
+
+[support_rx_rate_6g_wifi6_m2_jupiter]
+
+rate_11n = 11n Mcs8, 11n Mcs9, 11n Mcs10, 11n Mcs11, 11n Mcs12, 11n Mcs13, 11n Mcs14, 11n Mcs15
+rate_11ax_hesu = 11ax Mcs0_Hesu,11ax Mcs1_Hesu,11ax Mcs2_Hesu, 11ax Mcs3_Hesu, 11ax Mcs4_Hesu,11ax Mcs5_Hesu,11ax Mcs6_Hesu,11ax Mcs7_Hesu,11ax Mcs8_Hesu, 11ax Mcs9_Hesu,11ax Mcs10_Hesu,11ax Mcs11_Hesu
+rate_11ax_heer = 11ax Mcs0_Heer, 11ax Mcs1_Heer, 11ax Mcs2_Heer
+rate_11ax_hemu = 11ax Mcs0_Hemu, 11ax Mcs1_Hemu, 11ax Mcs2_Hemu,11ax Mcs3_Hemu,11ax Mcs4_Hemu,11ax Mcs5_Hemu,11ax Mcs6_Hemu,11ax Mcs7_Hemu,11ax Mcs8_Hemu, 11ax Mcs9_Hemu
+rate_11ac = 11ac Mcs0_vht,11ac Mcs1_vht,11ac Mcs2_vht,11ac Mcs3_vht,11ac Mcs4_vht,11ac Mcs5_vht,11ac Mcs6_vht,11ac Mcs7_vht,11ac Mcs8_vht,11ac Mcs9_vht
+

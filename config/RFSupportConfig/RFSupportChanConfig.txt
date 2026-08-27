@@ -1,0 +1,7 @@
+;; # config for 2.4g
+;; normal[Default]: 1~14, 3~11
+;; remove FCC: 1~11, 3~9, remove 20M bandwidth channel 12/13/14 and 40M bandwidth 10/11 for special customer requirement.
+;; RemoveFCC --> flag = 0: means default setup
+
+[RemoveFCC]
+flag = 0

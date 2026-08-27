@@ -1,0 +1,46 @@
+;; Support Country (can be expanded manually):
+;;	Default
+;;	SRRC
+;;	FCC
+;;      CE
+;;      NCC
+;;      KCC
+;;      MIC
+;;      IC
+
+
+[Bin_type_dic]
+Default  = 0
+SRRC     = 1
+FCC      = 2
+CE       = 3
+NCC      = 4
+KCC      = 5
+MIC      = 6
+IC       = 7
+ACMA     = 8
+ANATEL   = 9
+ISED     = 10
+WPC      = 11
+OFCA     = 12
+IFETEL   = 13
+RCM      = 14
+NUMBER   = 15
+
+[Bin_code_dic]
+0   = Default
+1   = SRRC
+2   = FCC
+3   = CE
+4   = NCC
+5   = KCC
+6   = MIC
+7   = IC
+8   = ACMA
+9   = ANATEL
+10  = ISED
+11  = WPC
+12  = OFCA
+13  = IFETEL
+14  = RCM
+15  = NUMBER
