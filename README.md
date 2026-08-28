@@ -94,7 +94,7 @@ The package includes both the tools and required test firmware.
   ### Log Window
 
   The Log window is used to display the status of the tool. To view the log printed via the chip serial port, please use a general serial port assistant, such as SerialPortUtility.
-![SerialPortUtility Interface](http://alithon.com/downloads)
+![SerialPortUtility](http://alithon.com/downloads)
 
 
 
@@ -105,7 +105,6 @@ The package includes both the tools and required test firmware.
   2. Open port → Select `.bin` → Start Load  
   3. After flashing → Close port and reset chip  
 
-![DownloadTool Interface](https://docs.espressif.com/projects/esp-test-tools/en/latest/_images/download_tool.png)
 
 Click ***`Tool`*** in the toolbar and select ***`DownloadTool`*** to enter the DownloadTool interface.
 
@@ -136,7 +135,57 @@ Follow the steps below to flash the firmware:
 - Supports FCC, CE, SRRC, NCC, KCC, MIC, IC  
 - Generate `phy_init_bin` for single or multiple countries  
 
-![PowerLimitTool Interface](https://docs.espressif.com/projects/esp-test-tools/en/latest/_images/power_limit_tool.png)
+Under the main interface of EspRFTestTool, click `Tool`, and select `PowerLimitTool` from the dropdown box to open PowerLimitTool.
+
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimit_open_7.png)
+
+1. In the main interface of PowerLimitTool, click the `Chip` dropdown box to view the chips supported by the tool and select a chip (This section takes ESP32-C3 as an example).
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimit_main_8.png)
+
+
+2.Click `Select Table` and select the TX Power Setting table for your chip.
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimit_select_9.png)
+
+3.Click `Open Table`, modify the power value in the corresponding country code table, and click `Save Table`.
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimit_country_10.png)
+
+4.After saving the power changes, select the required certification from the `Certification Code` dropdown, then click `Generate` to generate the phy_init_bin file for the corresponding country code.
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimit_generate_11.png)
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/phyinit_download_start_12.png)
+
+5.Verify whether phy_init_bin is effective using Non-Signaling or Signaling Test. Taking Non-Signaling Test as an example, first use the DownloadTool to download the generated phy_init_bin file to the testing product.
+
+- Select DownloadTool from Tool dropdown list to enter the DownloadTool interface.
+
+- Flash the phy_init_bin file and corresponding RF test firmware to flash by referring to the instructions stated DownloadTool.
+
+- The flash address for phy_init_bin is 0x1fc000 and the flash address for the RF test firmware ESP32 RF Non-Signaling Test Firmware is 0x1000.
+
+![PowerLimitTool](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/powerlimittool_rf_test_setting_13.png)
+
+6.Use a Wi-Fi tester to measure the output power and check whether phy_init_bin is effective.
+
+- Open EspRFTestTool.
+
+- Select corresponding ChipType, COM, BaudRate, and click Open to open the serial port.
+
+- Open the WiFi Test tab, and select Test Mode, Rate, BandWidth and Channel.
+
+- Set Attenuation to 0, and Duty Cycle to 10%.
+
+- With Certification EN unchecked, i.e., Phy init not enabled, the tool tests the initial performance of modules.
+
+- With Certification EN checked, i.e., Phy init enabled, the tool tests the performance for certification.
+
+- The default address for flashing phy_init_bin is 0x1fc000. If the flashing address changes, update it here.
+
+- For Multiple Country, you can select the certification country codes it includes in the Certification Code.
 
 ---
 
