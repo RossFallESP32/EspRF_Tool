@@ -107,7 +107,7 @@ The package includes both the tools and required test firmware.
 
 ![DownloadTool Interface](https://docs.espressif.com/projects/esp-test-tools/en/latest/_images/download_tool.png)
 
-Click "Tool" in the toolbar and select "DownloadTool" to enter the DownloadTool interface.
+Click ***`Tool`*** in the toolbar and select ***`DownloadTool`*** to enter the DownloadTool interface.
 
 
 
@@ -115,17 +115,17 @@ Click "Tool" in the toolbar and select "DownloadTool" to enter the DownloadTool 
 
 Follow the steps below to flash the firmware:
 
-- Set the ## Chip Type , <div><font color="red">COM Port </font></div>, and "Baud Rate</font>. Then, click Open to <font color="red">open</font> the serial port;
+- Set the ***`Chip Type`***, ***`COM Port`***, and ***`Baud Rate`***. Then, click ***`Open`*** to open the serial port;
 
-- Select <font color="red">flash</font> to download to the flash;
+- Select ***`flash`*** to download to the flash;
 
 - Select the firmware and flash it to the specified address;
 
-- Check whether the chip has entered download mode. If yes, click <font color="red">Start Load</font> to start flashing.
+- Check whether the chip has entered download mode. If yes, click ***`Start Load`*** to start flashing.
 - 
-- After flashing is completed, the <font color="red">SUCC</font> sign shows up;
+- After flashing is completed, the ***`SUCC`*** sign shows up;
 
-- After flashing is completed, click <font color="red">Close</font> to close the serial port.
+- After flashing is completed, click ***`Close`*** to close the serial port.
 
 ![DownloadTool Selection](https://github.com/RossFallESP32/EspRF_Tool/blob/main/img/downloadtool_select_6.png)
 
