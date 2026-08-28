@@ -115,7 +115,7 @@ Click "Tool" in the toolbar and select "DownloadTool" to enter the DownloadTool 
 
 Follow the steps below to flash the firmware:
 
-- Set the <span style="color:red">red Chip Type red text</span>, <font color="red">COM Port red</font>, and "Baud Rate</font>. Then, click Open to <font color="red">open</font> the serial port;
+- Set the <span style="color:red"> Chip Type </span>, <font color="red">COM Port red</font>, and "Baud Rate</font>. Then, click Open to <font color="red">open</font> the serial port;
 
 - Select <font color="red">flash</font> to download to the flash;
 
